@@ -10,6 +10,14 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
+# direnv
+_direnv_hook() {
+  eval "$(direnv export zsh)";
+}
+typeset -ag precmd_functions
+if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
+  precmd_functions+=_direnv_hook;
+fi
 
 # -----------------------
 # prompt
