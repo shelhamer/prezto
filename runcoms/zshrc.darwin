@@ -13,6 +13,9 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # tex
 export PATH="/Library/TeX/texbin:${PATH}"
 
+# python
+export PATH="${HOME}/miniconda2/bin:${PATH}"
+
 ## aliases
 
 # file opening
