@@ -151,10 +151,15 @@ alias histf="history | cut -c8- | count"
 alias duh="du -h -d=1"
 
 # -----------------------
-# os
+# os + local config
 # -----------------------
 
-os_file="$HOME/.zshrc.${$(uname):l}"
-if [ -r $os_file ]; then
-  . $os_file
+os_config="$HOME/.zshrc.${$(uname):l}"
+if [ -r $os_config ]; then
+  . $os_config
+fi
+
+local_config="$HOME/.zshrc.local"
+if [ -r $local_config ]; then
+  . $local_config
 fi
