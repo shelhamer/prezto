@@ -140,6 +140,7 @@ alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/Cellar/python3/
 
 alias reload="source ~/.zshrc"
 
+alias da='direnv allow'
 alias m8='make -j8'
 
 # command history inspection
