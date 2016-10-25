@@ -136,11 +136,11 @@ alias mkve='mkvirtualenv --no-site-packages --python=/usr/local/Cellar/python/2.
 alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/Cellar/python3/3.2/bin/python3'
 
 
-alias make8='make -j8' # parallelize
-
 ## misc.
 
 alias reload="source ~/.zshrc"
+
+alias m8='make -j8'
 
 # command history inspection
 alias count="sort | uniq -c | sort -rn"
