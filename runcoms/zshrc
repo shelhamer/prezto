@@ -132,8 +132,6 @@ alias tmk="tmux kill-session -t"
 
 # python
 alias jpnb='jupyter notebook --notebook-dir'
-alias mkve='mkvirtualenv --no-site-packages --python=/usr/local/Cellar/python/2.7.2/bin/python'
-alias mkve3='mkvirtualenv --no-site-packages --python=/usr/local/Cellar/python3/3.2/bin/python3'
 
 
 ## misc.
