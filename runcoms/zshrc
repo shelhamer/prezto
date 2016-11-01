@@ -134,6 +134,7 @@ alias tmk="tmux kill-session -t"
 alias jpnb='jupyter notebook --notebook-dir'
 alias jpc='jupyter console'
 
+alias dock='eval "$(docker-machine env default)"'
 
 ## misc.
 
