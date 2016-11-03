@@ -18,6 +18,9 @@ export PATH="${HOME}/miniconda2/bin:${PATH}"
 
 ## aliases
 
+# default args
+alias sedi="sed -i ''"  # skip in-place backups, I never make mistakes
+
 # file opening
 alias o="open"
 alias or="open -R"

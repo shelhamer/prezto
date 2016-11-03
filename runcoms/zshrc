@@ -51,7 +51,6 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias md="mkdir -p"
 alias scp="scp -r"
-alias sedi="sed -i ''" # skip in-place backups, I never make mistakes
 
 # ls
 alias ls="ls -F -G"
