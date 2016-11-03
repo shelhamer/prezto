@@ -64,6 +64,10 @@ alias pc="cp"
 alias vm="mv"
 alias mr="rm"
 
+# handle keys
+alias sshz="ssh-agent zsh"
+alias ssha="ssh-add"
+
 ## search
 
 alias grep="grep --color=auto"
