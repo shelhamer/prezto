@@ -137,14 +137,14 @@ alias tmk="tmux kill-session -t"
 alias jpnb='jupyter notebook --notebook-dir'
 alias jpc='jupyter console'
 
-alias dock='eval "$(docker-machine env default)"'
-
 ## misc.
 
 alias reload="source ~/.zshrc"
 
 alias da='direnv allow'
 alias m8='make -j8'
+
+alias dock='eval "$(docker-machine env default)"'
 
 # command history inspection
 alias count="sort | uniq -c | sort -rn"
