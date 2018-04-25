@@ -136,6 +136,8 @@ alias tmk="tmux kill-session -t"
 # python
 alias jpnb='jupyter notebook --notebook-dir'
 alias jpc='jupyter console'
+alias sa='source activate'
+alias sd='source deactivate'
 
 ## misc.
 
