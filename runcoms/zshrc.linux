@@ -18,6 +18,7 @@ export PATH=/usr/local/cuda/bin:$PATH
 
 # python
 export PATH=/home/shelhamer/miniconda2/bin:$PATH
+export PATH=/home/shelhamer/miniconda3/bin:$PATH
 
 ## aliases
 
