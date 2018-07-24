@@ -16,10 +16,6 @@ export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export PATH=/usr/local/cuda/bin:$PATH
 
-# python
-export PATH=/home/shelhamer/miniconda2/bin:$PATH
-export PATH=/home/shelhamer/miniconda3/bin:$PATH
-
 ## aliases
 
 alias duh='du --si --max-depth=1'

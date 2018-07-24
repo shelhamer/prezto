@@ -31,10 +31,10 @@ bindkey -M vicmd "?" history-incremental-search-forward
 # -----------------------
 # environment
 # -----------------------
-#
 
-# python
-# export PYTHONSTARTUP="${HOME}/.pythonrc.py"
+# python (paths diverge across machines for historical reasons)
+export PATH=$HOME/miniconda2/bin:$PATH
+export PATH=$HOME/miniconda3/bin:$PATH
 
 # -----------------------
 # aliases
