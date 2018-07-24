@@ -3,14 +3,14 @@
 # -----------------------
 
 ## environment
-#
+
 # path + library path
-export PATH=:/bin:/usr/bin:/usr/sbin:/sbin:/usr/local/bin:${PATH}
+export PATH=:/bin:/usr/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 export LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:$LD_LIBRARY_PATH
 
 # home
-export PATH=/home/shelhamer/bin:$PATH
-export LD_LIBRARY_PATH=/home/shelhamer/lib:$LD_LIBRARY_PATH
+export PATH=$HOME/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 
 # cuda
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
