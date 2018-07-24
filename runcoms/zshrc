@@ -153,9 +153,6 @@ alias count="sort | uniq -c | sort -rn"
 alias hist="history | cut -c8- | cut -d' ' -f1 | count"
 alias histf="history | cut -c8- | count"
 
-# disk usage
-alias duh="du -h -d=1"
-
 # -----------------------
 # os + local config
 # -----------------------

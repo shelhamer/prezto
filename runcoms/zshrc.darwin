@@ -28,6 +28,9 @@ alias pv="pbpaste"
 
 alias marked="open -a Marked\ 2.app"
 
+# disk usage
+alias duh="du -h -d=1"
+
 ## navigation
 
 # quick access to common dirs
