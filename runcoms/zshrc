@@ -144,8 +144,6 @@ alias sd='source deactivate'
 alias reload="source ~/.zshrc"
 
 alias da='direnv allow'
-alias m8='make -j8'
-
 alias dock='eval "$(docker-machine env default)"'
 
 # command history inspection
