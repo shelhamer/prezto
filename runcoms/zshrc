@@ -16,6 +16,22 @@ if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
   precmd_functions+=_direnv_hook;
 fi
 
+# ssh agent
+if [ -z "$TMUX" ]; then  # not in tmux
+    if [ ! -z "$SSH_TTY" ]; then  # in ssh
+        if [ -z "$SSH_AUTH_SOCK" ]; then  # make socket if needed
+            export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
+        fi
+        if [ ! -S "$SSH_AUTH_SOCK" ]; then  # given socket, make new session
+            eval `ssh-agent -a $SSH_AUTH_SOCK` > /dev/null 2>&1
+            echo $SSH_AGENT_PID > $HOME/.ssh/.auth_pid
+        fi
+        if [ -z $SSH_AGENT_PID ]; then  # given socket & agent, export session
+            export SSH_AGENT_PID=`cat $HOME/.ssh/.auth_pid`
+        fi
+    fi
+fi
+
 # -----------------------
 # prompt
 # -----------------------
@@ -65,7 +81,6 @@ alias vm="mv"
 alias mr="rm"
 
 # handle keys
-alias sshz="ssh-agent zsh"
 alias ssha="ssh-add"
 
 ## search
